@@ -4,7 +4,7 @@ import json
 import os
 
 def main():
-    st.title("Newsletter Dashboard")
+    st.title("Welcome to Pod Snap!")
 
     available_podcast_info = create_dict_from_json_files('.')
 
@@ -20,7 +20,7 @@ def main():
         podcast_info = available_podcast_info[selected_podcast]
 
         # Right section - Newsletter content
-        st.header("Welcome to Pod Snap!")
+        st.header("Newsletter Dashboard")
 
         # Display the podcast title
         st.subheader("Episode Title")
