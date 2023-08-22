@@ -49,7 +49,7 @@ def main():
             st.write(podcast_info["podcast_guest"]['summary'])
 
         # Display the five key moments
-        st.subheader("Key Moments")
+        st.subheader("Key Takeaways")
         key_moments = podcast_info['podcast_highlights']
         for moment in key_moments.split('\n'):
             st.markdown(
@@ -60,7 +60,7 @@ def main():
     url = st.sidebar.text_input("Link to RSS Feed")
 
     process_button = st.sidebar.button("Process Podcast Feed")
-    st.sidebar.markdown("**Note**: Podcast processing can take upto 5 mins, please be patient.")
+    st.sidebar.markdown("**Note**: Please be aware processing a new podcast feed could take a while")
 
     if process_button:
 
